@@ -1,7 +1,7 @@
 {
-  "name": "stencil-tailwind",
+  "name": "stencil-tailwind-ds",
   "version": "0.0.1",
-  "description": "Stencil Component Starter",
+  "description": "Stencil Tailwind Design System",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "es2015": "dist/esm/index.mjs",
@@ -24,5 +24,18 @@
   "devDependencies": {
     "@stencil/core": "1.16.3"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KBora/stencil-tailwind.git"
+  },
+  "keywords": [
+    "designsystem"
+  ],
+  "author": "Kian Woo <headcleanercountry@yahoo.co.uk>",
+  "bugs": {
+    "url": "https://github.com/KBora/stencil-tailwind/issues"
+  },
+  "homepage": "https://github.com/KBora/stencil-tailwind#readme"
 }
