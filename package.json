@@ -22,10 +22,16 @@
     "generate": "stencil generate"
   },
   "devDependencies": {
-    "@stencil/core": "1.16.3"
+    "@stencil/core": "1.16.3",
+    "@types/puppeteer": "2.0.1",
+    "jest": "26.0.1",
+    "jest-cli": "26.0.1",
+    "puppeteer": "2.1.1"
   },
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "@types/jest": "^26.0.10"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/KBora/stencil-tailwind.git"
@@ -37,5 +43,5 @@
   "bugs": {
     "url": "https://github.com/KBora/stencil-tailwind/issues"
   },
-  "homepage": "https://github.com/KBora/stencil-tailwind#readme"
+  "homepage": "https://github.  com/KBora/stencil-tailwind#readme"
 }
