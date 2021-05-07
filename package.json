@@ -1,7 +1,7 @@
 {
-  "name": "stencil-tailwind-ds",
+  "name": "stencil-demo-ds",
   "version": "0.0.1",
-  "description": "Stencil Tailwind Design System",
+  "description": "Stencil Demo Design System",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "es2015": "dist/esm/index.mjs",
@@ -9,7 +9,7 @@
   "types": "dist/types/index.d.ts",
   "collection": "dist/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
-  "unpkg": "dist/stencil-tailwind/stencil-tailwind.js",
+  "unpkg": "dist/stencil-demo/stencil-demo.js",
   "files": [
     "dist/",
     "loader/"
@@ -26,7 +26,8 @@
     "@types/puppeteer": "2.0.1",
     "jest": "26.0.1",
     "jest-cli": "26.0.1",
-    "puppeteer": "2.1.1"
+    "puppeteer": "2.1.1",
+    "stencil-tailwind": "0.0.6"
   },
   "license": "MIT",
   "dependencies": {
@@ -34,14 +35,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KBora/stencil-tailwind.git"
+    "url": "git+https://github.com/KBora/stencil-demo.git"
   },
   "keywords": [
     "designsystem"
   ],
   "author": "Kian Woo <headcleanercountry@yahoo.co.uk>",
   "bugs": {
-    "url": "https://github.com/KBora/stencil-tailwind/issues"
+    "url": "https://github.com/KBora/stencil-demo/issues"
   },
-  "homepage": "https://github.  com/KBora/stencil-tailwind#readme"
+  "homepage": "https://github.com/KBora/stencil-demo#readme"
 }
