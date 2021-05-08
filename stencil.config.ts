@@ -2,7 +2,7 @@ import { Config } from '@stencil/core';
 import tailwind from 'stencil-tailwind'
 
 export const config: Config = {
-  namespace: 'stencil-tailwind',
+  namespace: 'stencil-demo',
   taskQueue: 'async',
   plugins: [
     tailwind()
@@ -22,5 +22,5 @@ export const config: Config = {
   ],
   devServer: {
     reloadStrategy: 'pageReload'
-  }
+  }versio
 };
