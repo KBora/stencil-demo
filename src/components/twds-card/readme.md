@@ -16,6 +16,13 @@
 | `cardTitle`    | `card-title`     |             | `string`   | `undefined`                               |
 
 
+## Events
+
+| Event      | Description | Type               |
+| ---------- | ----------- | ------------------ |
+| `tagClick` |             | `CustomEvent<any>` |
+
+
 ----------------------------------------------
 
 *Built with [StencilJS](https://stenciljs.com/)*
