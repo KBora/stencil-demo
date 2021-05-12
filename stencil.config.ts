@@ -1,12 +1,9 @@
 import { Config } from '@stencil/core';
-import tailwind from 'stencil-tailwind'
 
 export const config: Config = {
   namespace: 'stencil-demo',
   taskQueue: 'async',
-  plugins: [
-    tailwind()
-  ],
+
   outputTargets: [
     {
       type: 'dist',

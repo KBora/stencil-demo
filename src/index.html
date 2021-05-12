@@ -5,14 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
   <title>Stencil Component Starter</title>
 
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  
   <script type="module" src="/dist/stencil-demo/stencil-demo.esm.js"></script>
   <script nomodule src="/dist/stencil-demo/stencil-demo.js"></script>
 
 </head>
 <body>
 
-  <my-component first="Stencil" last="'Don't call me a framework' JS"></my-component>
-
+  <twds-card
+    card-image-url="https://source.unsplash.com/random/384x234"
+    card-image-alt="Random image"
+    card-title="What will the future hold?"
+    card-text="If you obsess over whether you are making the right decision, you are basically assuming that the universe will reward you for one thing and punish you for another."
+  >
+  </twds-card>
   <twds-hexagram lines="001111"></twds-hexagram>
 
   <twds-hexagram lines="110011">hello</twds-hexagram>
