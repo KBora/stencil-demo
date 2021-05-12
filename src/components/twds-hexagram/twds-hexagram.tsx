@@ -32,6 +32,7 @@ export class TwdsHexagram {
              </div>
           )}
         </div>
+        <slot></slot>
       </Host>
     );
   }
