@@ -20,6 +20,13 @@ export namespace Components {
          */
         "middle": string;
     }
+    interface TwdsCard {
+        "cardImageAlt": string;
+        "cardImageUrl": string;
+        "cardTags": string[];
+        "cardText": string;
+        "cardTitle": string;
+    }
     interface TwdsHexagram {
         "lines": string;
     }
@@ -31,6 +38,12 @@ declare global {
         prototype: HTMLMyComponentElement;
         new (): HTMLMyComponentElement;
     };
+    interface HTMLTwdsCardElement extends Components.TwdsCard, HTMLStencilElement {
+    }
+    var HTMLTwdsCardElement: {
+        prototype: HTMLTwdsCardElement;
+        new (): HTMLTwdsCardElement;
+    };
     interface HTMLTwdsHexagramElement extends Components.TwdsHexagram, HTMLStencilElement {
     }
     var HTMLTwdsHexagramElement: {
@@ -39,6 +52,7 @@ declare global {
     };
     interface HTMLElementTagNameMap {
         "my-component": HTMLMyComponentElement;
+        "twds-card": HTMLTwdsCardElement;
         "twds-hexagram": HTMLTwdsHexagramElement;
     }
 }
@@ -57,11 +71,19 @@ declare namespace LocalJSX {
          */
         "middle"?: string;
     }
+    interface TwdsCard {
+        "cardImageAlt"?: string;
+        "cardImageUrl"?: string;
+        "cardTags"?: string[];
+        "cardText"?: string;
+        "cardTitle"?: string;
+    }
     interface TwdsHexagram {
         "lines"?: string;
     }
     interface IntrinsicElements {
         "my-component": MyComponent;
+        "twds-card": TwdsCard;
         "twds-hexagram": TwdsHexagram;
     }
 }
@@ -70,6 +92,7 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
+            "twds-card": LocalJSX.TwdsCard & JSXBase.HTMLAttributes<HTMLTwdsCardElement>;
             "twds-hexagram": LocalJSX.TwdsHexagram & JSXBase.HTMLAttributes<HTMLTwdsHexagramElement>;
         }
     }
